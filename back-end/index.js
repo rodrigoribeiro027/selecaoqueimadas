@@ -25,7 +25,8 @@ export const pegarDadosCsv = async () => {
         path.join("./fire_risk.csv")
     );
     async function Data (json) {
-        // Utilizo o Timeout Para que o Sistema não Sobrecarregue com a demanda de informaçoes e com a biblioteca 
+        // Utilizo o Timeout Para que o Sistema não Sobrecarregue com a demanda de informaçoes e com a biblioteca
+        setTimeout(50)
         console.log(json)
         await runDados(json)
         
